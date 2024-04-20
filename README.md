@@ -33,3 +33,24 @@ When you start your application, it will show you the average number of posts pe
 
 ![display-an-iframe-modal-example](https://github.com/davidmenlop/HubSpot-Developer-Coding/blob/master/Logs.png)
 
+## Point of discussion
+
+1. **Infinite Loop:** The function uses a `while (true)` loop to continuously execute and check for changes in the posts data.
+
+2. **Get Previous Posts:** First, it retrieves the previous posts by calling the `getPosts()` function and stores them in the `previousPosts` variable.
+
+3. **1-Minute Wait:** After obtaining the previous posts, it displays a message in the console indicating that the posts data has been fetched and waits for 1 minute before proceeding with change checking. This is done using `await new Promise(resolve => setTimeout(resolve, 60000))`, which is an asynchronous wait for 1 minute.
+
+4. **Get Current Posts:** After waiting for 1 minute, it retrieves the current posts by calling the `getPosts()` function again and stores them in the `currentPosts` variable.
+
+5. **Check for Changes:** It compares the previous posts with the current ones using `JSON.stringify(previousPosts) !== JSON.stringify(currentPosts)` to determine if there have been any changes in the posts.
+
+6. **Show Changes:** If changes are detected, it displays the new posts, deleted posts, and modified posts in the console. It uses the `filter()` and `find()` functions to compare the previous and current posts and find the changes.
+
+7. **Calculate Average and Identify Top Users:** After showing the changes, it calculates the average number of posts per user and identifies the top 3 users with the most posts using the `identifyTopUsers()` function. This is done by calling the `getUsers()` and `calculateAveragePostsPerUser()` functions.
+
+8. **Error Handling:** The function handles any errors that may occur during the synchronization process and prints the errors to the console.
+
+9. **1-Minute Wait:** After completing all operations, it returns to step 2 and waits for another 1 minute before starting a new check for changes.
+
+This function basically automates the process of checking for changes in the posts data, updating the information in the console whenever changes are made to the posts.
