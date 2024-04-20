@@ -29,5 +29,7 @@ In the blogs.json following steps:
 
 ## Results
 
+When you start your application, it will show you the average number of posts per user and the top 3 users with the most posts. The code queries the information every minute to find changes and update the data once changes are made in the `blogs.json` file. After the minute has passed, you will see the new information in the console, where it displays the object of the new post or deleted post, followed by the previous and current versions of modified posts. Then, it shows the average number of posts per user again and updates the top 3 if applicable.
+
 ![display-an-iframe-modal-example](https://github.com/davidmenlop/HubSpot-Developer-Coding/blob/master/Logs.png)
 
