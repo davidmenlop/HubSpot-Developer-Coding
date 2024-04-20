@@ -2,8 +2,6 @@
 
 This tool allows you to synchronize and monitor changes in a blog system, fetching data from both a local JSON file and an external API.
 
-![display-an-iframe-modal-example](https://github.com/davidmenlop/HubSpot-Developer-Coding/blob/master/Logs.png)
-
 
 ## Quick Start
 
@@ -29,5 +27,7 @@ In the blogs.json following steps:
 4. Check on your console the news logs with changes on the New Posts or Deleted Post when delete or add data.
 5. Check on your console the news logs with changes on the Modified posts with current and previous information.
 
-If you haven't customized the tabs before follow step #4 from [this guide](https://developers.hubspot.com/docs/platform/ui-extensions-quickstart).
+## Results
+
+![display-an-iframe-modal-example](https://github.com/davidmenlop/HubSpot-Developer-Coding/blob/master/Logs.png)
 
