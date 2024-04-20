@@ -7,7 +7,7 @@ This tool allows you to synchronize and monitor changes in a blog system, fetchi
 
 ### Step 1: Clone the project
 
-Create a folder where you want this sample to be cloned and clone the repository
+Clone the repository on your local desktop
 
 ### Step 2: Install dependencies
 
