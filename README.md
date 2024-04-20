@@ -1,14 +1,37 @@
-# HubSpot Developer Coding
+# Blog Synchronization Tool
 
-This repository contains code and projects related to HubSpot development and coding tasks.
+This tool allows you to synchronize and monitor changes in a blog system, fetching data from both a local JSON file and an external API.
 
-## Getting Started
+![display-an-iframe-modal-example](https://github.com/davidmenlop/HubSpot-Developer-Coding/blob/master/Logs.png)
 
-To get started with this project, follow these steps:
 
-1. **Clone the Repository**: Clone this repository to your local machine using the following command:
-   
-   git clone https://github.com/davidmenlop/HubSpot-Developer-Coding.git
+## Quick Start
 
-Explore the Code: Browse through the directories and files to explore the code and projects available in this repository.
-Contribute: If you'd like to contribute to this project, fork the repository, make your changes, and submit a pull request. Your contributions are welcome!
+### Step 1: Update your CLI and & authenticate your account
+
+1. Update to latest CLI version by running `npm install -g @hubspot/cli@latest`.
+1. Run `hs init` if you haven’t already done so to create a config file for your parent account.
+1. Run `hs auth` to authenticate your account. Alternatively, select your pre-authenticated account with `hs accounts use`.
+
+### Step 2: Create the project
+
+In the folder where you want this sample to be cloned, create a new project by running `hs project create --templateSource="HubSpot/ui-extensions-examples" --location="display-iframe-modal" --name="display-iframe-modal" --template="display-iframe-modal"`
+
+### Step 3: Install dependencies
+
+Now in the CLI, enter into this newly created folder by `cd display-iframe-modal`. Run `npm install` to install the dependencies for this project.
+
+### Step 4: Upload project
+
+Run `hs project upload`. If you’d like to build on this project, run `hs project dev` to kickoff the dev process and see changes reflected locally as you build.
+
+### Step 5: View the cards
+
+In the main menu select `Contacts` > `Contacts` to view contact records. Click on any of the contact objects and navigate to the custom tab to access the sample card. If you don’t have any contacts in the account you’re using to view this sample, create a contact by the following steps:
+
+1. In the main menu, select `Contacts` > `Contacts`.
+2. Click `Create contact` in the top right hand corner and fill in all required fields. Click `create` once you’ve finished filling in your contact details.
+3. Your new contact should appear in the `Contacts table`. Select it and navigate to the `Custom` tab in the middle pane to access the sample card.
+
+If you haven't customized the tabs before follow step #4 from [this guide](https://developers.hubspot.com/docs/platform/ui-extensions-quickstart).
+
