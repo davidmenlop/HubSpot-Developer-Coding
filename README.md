@@ -33,7 +33,7 @@ When you start your application, it will show you the average number of posts pe
 
 ![display-an-iframe-modal-example](https://github.com/davidmenlop/HubSpot-Developer-Coding/blob/master/Logs.png)
 
-## Point of discussion
+## Point of discussion syncData() function
 
 1. **Infinite Loop:** The function uses a `while (true)` loop to continuously execute and check for changes in the posts data.
 
