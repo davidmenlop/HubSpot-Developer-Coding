@@ -7,7 +7,7 @@ async function syncData() {
         try {
             const previousPosts = await getPosts();
             console.log("Posts data fetched. Waiting for 1 minute before checking for changes...");
-            await new Promise(resolve => setTimeout(resolve, 60000)); // Esperar 1 minuto
+            await new Promise(resolve => setTimeout(resolve, 60000)); // Wait 1 minute
 
             const currentPosts = await getPosts();
             const hasChanged = JSON.stringify(previousPosts) !== JSON.stringify(currentPosts);
