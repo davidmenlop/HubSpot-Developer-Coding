@@ -1,0 +1,23 @@
+{
+  "name": "david-test",
+  "version": "1.0.0",
+  "description": "HubSpot Test",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmenlop/HubSpot-Developer-Coding.git"
+  },
+  "author": "Davidmenlop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmenlop/HubSpot-Developer-Coding/issues"
+  },
+  "homepage": "https://github.com/davidmenlop/HubSpot-Developer-Coding#readme",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "nodemon": "^3.1.0"
+  }
+}
