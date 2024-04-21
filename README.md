@@ -53,4 +53,4 @@ When you start your application, it will show you the average number of posts pe
 
 9. **1-Minute Wait:** After completing all operations, it returns to step 2 and waits for another 1 minute before starting a new check for changes.
 
-This function basically automates the process of checking for changes in the posts data, updating the information in the console whenever changes are made to the posts.
+This function basically automates the process of checking for changes in the posts data, updating the information in the console whenever changes are made to the posts. However we can use the Webhooks API from HubSpot to detect changes on our HubSpot account and improve the data query only when we need to read the changes and don't want to consume endpoints by interval
